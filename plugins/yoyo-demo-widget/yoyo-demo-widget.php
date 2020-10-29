@@ -1,16 +1,16 @@
 <?php
 /**
-Plugin Name: Yoyo - Reactive PHP Framework
+Plugin Name: Yoyo Demo Widget
 Plugin URI: https://getyoyo.dev
-Description: WordPress implementation of Yoyo to simplify reactive component development
+Description: Widget with a few demo Yoyo components
 Version: 0.4.0
 Author: ClickFWD, LLC
 Author URI: https://getyoyo.dev
 License: GNU General Public License version 3 or later; see LICENSE.txt
 Copyright: Copyright (c) 2020 ClickFWD, LLC All rights reserved.
-Text Domain: yoyo
+Text Domain: yoyo-demo-widget
 */
 
 defined('ABSPATH') or die;
 
-include __DIR__.'/src/yoyo.php';
+require __DIR__.'/src/yoyo-demo-widget.php';

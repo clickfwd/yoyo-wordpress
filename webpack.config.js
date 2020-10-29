@@ -16,6 +16,11 @@ const extensionTypesDirs = [
   'plugins',
 ];
 
+const pluginTemplateFiles = [
+  'yoyo.php',
+  'yoyo-demo-widget.php'
+]
+
 // WARNING - Clean these development folders before building
 const globalCleanDevAssets = [
   /\/node_modules\//,
@@ -160,15 +165,15 @@ function renderTemplates() {
     allExtensionTypesDirs.forEach((extensionType) => {
       const extTplDir = resolveExtensionTemplate(tplDirectory, extensionType);
       const templates = discoverFilesToRender(tplDirectory, extensionType);
-
+      
       // For each template
       templates.forEach((file) => {
 
         const pathParts = file.split('/');
-        if (pathParts[0] == 'vendor' && pathParts[3] === 'vendor') {
+        if (pathParts[1] == 'vendor' && pathParts[4] === 'vendor') {
           return;
         }
-        if (pathParts[0] == 'vendor' && pathParts[3] === 'tests') {
+        if (pathParts[1] == 'vendor' && pathParts[4] === 'tests') {
           return;
         }
 
@@ -207,7 +212,7 @@ function declareZipsGeneration() {
         const extname = path.extname(srcFile);
         const pluginName = path.basename(tplFile, extname);
 
-        if (path.basename(srcFile) !== `${definitions.PLUGIN_ALIAS}.php`) return;
+        if (!pluginTemplateFiles.includes(path.basename(srcFile))) return;
 
         const manifestTplFile = `${extZipDir}/${tplFile}`;
         const extensionTplDir = path.dirname(manifestTplFile);

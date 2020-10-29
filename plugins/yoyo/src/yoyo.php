@@ -1,12 +1,4 @@
 <?php
-/* Plugin Name: Yoyo - Reactive PHP Framework
-Plugin URI: https://getyoyo.dev
-Description: WordPress implementation of Yoyo to simplify reactive component development
-Version: 0.3.0
-Author: ClickFWD LLC
-Author URI: https://getyoyo.dev
-License: GNU GPL version 3 or later
-*/
 
 defined('ABSPATH') or die;
 

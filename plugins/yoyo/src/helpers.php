@@ -2,6 +2,8 @@
 
 namespace Yoyo;
 
+defined('ABSPATH') or die;
+
 use Clickfwd\Yoyo\Yoyo;
 
 if (! function_exists('Yoyo\yoyo_render')) 

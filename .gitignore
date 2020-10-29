@@ -1,7 +1,7 @@
 node_modules
 package-lock.json
 build/release
-build/templates/plugins/vendor
-build/templates/plugins/composer-dev.json
-build/templates/plugins/composer.lock
-plugins/vendor
+build/templates/plugins/yoyo/vendor
+build/templates/plugins/yoyo/composer-dev.json
+build/templates/plugins/yoyo/composer.lock
+plugins/yoyo/vendor

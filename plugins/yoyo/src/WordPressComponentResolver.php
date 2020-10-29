@@ -2,6 +2,8 @@
 
 namespace Clickfwd\Yoyo\WordPress;
 
+defined('ABSPATH') or die;
+
 use Clickfwd\Yoyo\Yoyo;
 use Clickfwd\Yoyo\Component;
 use Clickfwd\Yoyo\AnonymousComponent;
