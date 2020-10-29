@@ -1,0 +1,45 @@
+{
+  "name": "yoyo-joomla",
+  "version": "0.0.1",
+  "description": "Reactive PHP Framework",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "cross-env webpack --mode=production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clickfwd/yoyo-joomla.git"
+  },
+  "keywords": [],
+  "author": "ClickFWD",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/clickfwd/yoyo-joomla/issues"
+  },
+  "homepage": "https://github.com/clickfwd/yoyo-joomla",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
+    "copy-webpack-plugin": "^5.1.1",
+    "cross-env": "^7.0.2",
+    "dotenv-webpack": "^1.7.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint": "^7.0.0",
+    "filemanager-webpack-plugin": "^2.0.5",
+    "fs-extra": "^9.0.0",
+    "glob": "^7.1.6",
+    "moment": "^2.25.3",
+    "serialize-javascript": "^3.0.0",
+    "touch": "^3.1.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-zip-files-plugin": "^1.0.0",
+    "webpack": "^4.43.0"
+  },
+  "browserslist": "> 0.25%, not dead"
+}
