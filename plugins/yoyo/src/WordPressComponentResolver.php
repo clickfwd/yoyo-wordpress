@@ -18,13 +18,10 @@ class WordPressComponentResolver extends ComponentResolver
 {
     public function resolveDynamic($registered): ?Component
     {
-        if ($this->source()) {
+        $class = $this->autoloadComponentClass();
 
-            $class = $this->autoloadComponentClass();
-
-            if ($class && is_subclass_of($class, Component::class)) {
-                return new $class($this->id, $this->name, $this);
-            }
+        if ($class && is_subclass_of($class, Component::class)) {
+            return new $class($this->id, $this->name, $this);
         }
 
         return parent::resolveDynamic($registered);
