@@ -159,9 +159,9 @@ class CustomResolver extends WordPressComponentResolver
         $yoyoComponentName = $this->name;
 
         if (self::clientIsAdmin()) {
-            $path = ABSPATH."/yoyo/views";
+            $path = ABSPATH."yoyo_admin/views";
         } else {
-            $path = ABSPATH."/yoyo_admin/views";
+            $path = ABSPATH."yoyo/views";
         }
 
         if (! is_dir($path)) {
@@ -176,9 +176,9 @@ class CustomResolver extends WordPressComponentResolver
         $yoyoComponentName = $this->name;
         
         if (self::clientIsAdmin()) {
-            $path = ABSPATH."/yoyo/components/{$yoyoComponentName}.php";
+            $path = ABSPATH."yoyo_admin/components/{$yoyoComponentName}.php";
         } else {
-            $path = ABSPATH."/yoyo_admin/components/{$yoyoComponentName}.php";
+            $path = ABSPATH."yoyo/components/{$yoyoComponentName}.php";
         }
 
         $className = YoyoHelpers::studly($yoyoComponentName);
