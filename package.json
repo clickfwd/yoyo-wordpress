@@ -1,5 +1,5 @@
 {
-  "name": "yoyo-joomla",
+  "name": "yoyo-wordpress",
   "version": "0.0.1",
   "description": "Reactive PHP Framework",
   "main": "webpack.config.js",
