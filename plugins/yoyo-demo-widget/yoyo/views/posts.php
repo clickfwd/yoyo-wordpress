@@ -18,13 +18,13 @@
 
 	<button 
 		<?php echo !$this->previous ? 'disabled' : ''; ?>
-		yoyo:vars="page: <?php echo $this->previous; ?>"
+		yoyo:vars="pg: <?php echo $this->previous; ?>"
 	>
 		Previous
 	</button>
 
 	<button 
-		yoyo:vars="page: <?php echo $this->next; ?>"
+		yoyo:vars="pg: <?php echo $this->next; ?>"
 	>
 		Next
 	</button>

@@ -8,7 +8,7 @@ use Clickfwd\Yoyo\Component;
 
 class Posts extends Component
 {
-	public $page = 1;
+	public $pg = 1;
 
 	public $limit = 10;
 
@@ -17,7 +17,7 @@ class Posts extends Component
 		$args = [
 			'posts_per_page' => $this->limit,
 			// 'category_name' => $btmetanm,
-			'paged' => $this->page,
+			'paged' => $this->pg,
 			'post_type' => 'post',
 			'orderby' => 'date',
 			'order' => 'DESC',
@@ -30,16 +30,16 @@ class Posts extends Component
 
     protected function getStartProperty()
     {
-        return 1 + (($this->page - 1) * $this->limit);
+        return 1 + (($this->pg - 1) * $this->limit);
     }
 
     protected function getNextProperty()
     {
-        return $this->page + 1;
+        return $this->pg + 1;
     }
 
     protected function getPreviousProperty()
     {
-        return $this->page > 1 ? $this->page - 1 : false;
+        return $this->pg > 1 ? $this->pg - 1 : false;
     }	
 }
