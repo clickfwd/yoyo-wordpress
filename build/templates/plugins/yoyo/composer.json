@@ -3,7 +3,7 @@
     "description": "Yoyo Joomla - Reactive PHP Framework",
     "type": "yoyo-joomla",
     "require": {
-        "clickfwd/yoyo": "^0.3"
+        "clickfwd/yoyo": "^0.4"
     },
     "license": "GPL 3 or later",
     "authors": [

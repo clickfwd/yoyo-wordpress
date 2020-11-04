@@ -48,9 +48,8 @@ class YoyoFramework
 
 		$this->yoyo->configure([
 		  'url' => $url,
-		  'scriptsPath' => plugin_dir_url(__FILE__).'/../vendor/clickfwd/yoyo/src/assets/js',
+		  'scriptsPath' => plugin_dir_url(__DIR__).'vendor/clickfwd/yoyo/src/assets/js',
 		  // Disabled until a better history caching solution can be implemented
-		  'historyEnabled' => false,
 		]);
 		
 		$this->yoyo->registerComponentResolver('wordpress', WordPressComponentResolver::class);

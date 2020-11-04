@@ -3,7 +3,7 @@
 Plugin Name: Yoyo Demo Widget
 Plugin URI: https://getyoyo.dev
 Description: Widget with a few demo Yoyo components
-Version: 0.3.1
+Version: 0.4.0
 Author: ClickFWD, LLC
 Author URI: https://getyoyo.dev
 License: GNU General Public License version 3 or later; see LICENSE.txt

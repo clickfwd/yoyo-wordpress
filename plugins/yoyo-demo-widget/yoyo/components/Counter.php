@@ -10,7 +10,7 @@ class Counter extends Component
 {
     public $count = 0;
 
-    // protected $queryString = ['count'];
+    protected $queryString = ['count'];
 
     public function increment()
     {
